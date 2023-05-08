@@ -276,6 +276,19 @@ hr {
     transform: scale(0.98);
 }
 
+.recomended-poems .poem {
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .recomended-poems h4 {
     margin-bottom: 15px;
 
