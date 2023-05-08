@@ -7,6 +7,7 @@
     <title>ПоЧитатели!</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/anchors.js" defer></script>
   </head>
 
   <body>
@@ -16,8 +17,8 @@
 
         <nav class="header__nav">
           <ul>
-            <li><a href="index.html#welcome">Главная</a></li>
-            <li><a href="#footer__desc">Контакты</a></li>
+            <li><a href="#welcome" class="this-page">Главная</a></li>
+            <li><a href="#footer__social" class="this-page">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -29,8 +30,8 @@
           <h2 class="welcome__heading">Привет от ПоЧитателей!</h2>
 
           <div class="welcome__links">
-            <a href="#" class="link-primary">Записаться</a>
-            <a href="#" class="link">Узнать больше</a>
+            <a href="#footer__social" class="link-primary">Записаться</a>
+            <a href="#footer__about" class="link">Узнать больше</a>
           </div>
         </div>
       </section>
@@ -81,10 +82,10 @@
     </main>
     
     <footer class="footer">
-      <div class="footer__desc" id="footer__desc">
+      <div class="footer__desc">
         <div class="container footer__desc-container">
 
-          <div class="footer__about">
+          <div class="footer__about" id="footer__about">
             <h4>Кратко о нас</h4>
             <p>
               Читаем и развиваемся вместе!<br>
@@ -103,7 +104,7 @@
             </ul>
           </div>
 
-          <div class="footer__social">
+          <div class="footer__social" id="footer__social">
             <h4>Контакты</h4>
             <ul>
               <li>
