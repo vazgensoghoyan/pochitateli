@@ -168,11 +168,9 @@ hr {
 
     transition: background-color 0.2s;
 }
-
 .link-primary:hover {
     background-color: #7CC2FF;
 }
-
 .link-primary:active {
     background-color: #0F8FFF;
 }
@@ -190,13 +188,42 @@ hr {
 
     transition: background-color 0.2s;
 }
-
 .link:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
 .link:active {
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.link-white {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+
+    font-size: 16px;
+	font-weight: 700;
+    letter-spacing: 2px;
+	text-transform: uppercase;
+
+    border-radius: 15px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+
+    background-color: #87c6fd;
+    
+    transition: all 0.1s ease-in-out;
+}
+.link-white:hover {
+	background-color: #fffcee;
+	border: solid 3px #69B9FF;
+    transform: scale(0.95);
+}
+.link-white:active {
+    background-color: #e9e9e9;
+    transform: scale(0.98);
+}
+.link-white:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px lightskyblue;
 }
 
 /* ------------------ ABOUT (WHAT WE DO) ------------------ */
