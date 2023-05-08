@@ -46,22 +46,6 @@ p {
     color: #fff;
 }
 
-.cards-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card h4 {
-    margin-bottom: 15px;
-
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
 hr {
 	margin: 20px 0;
 	border-top: 1px solid #94999c;
@@ -197,8 +181,15 @@ hr {
 }
 
 /* ------------------ ABOUT (WHAT WE DO) ------------------ */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .card {
-    width: 300px;
+    max-width: 300px;
     padding: 36px 15px 10px 15px;
 
     border: 1px solid #DCEBF7;
@@ -213,13 +204,22 @@ hr {
 }
 
 .card h4 {
+    margin-bottom: 15px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
     color: #676770;
 }
 
 /* ------------------ MEETINGS HELD ------------------ */
-.meetings .card {
-    width: 35%;
+.meetings .cards-wrapper {
+    justify-content: space-around;
+}
 
+.meetings .card {
     border: 1px solid #929292;
 }
 
@@ -420,6 +420,19 @@ hr {
 
 /* ------------------ ADAPTIVE DESIGN ------------------ */
 @media (max-width: 550px) {
+    body {
+        font-size: 13px;
+    }
+
+    .title {
+        margin-bottom: 30px;
+
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+
+    /* */
+
     .header {
         padding: 8px 0;
     }
@@ -450,9 +463,39 @@ hr {
         margin: 10px auto 0 auto;
         width: 70%;
     }
+
+    /* */
+
+    .card {
+        padding: 10px 15px;
+    }
+    
+    .card img {
+        margin-bottom: 10px;
+    
+        width: 100px;
+        height: 100px;
+    }
+
+    .card h4 {
+        margin-bottom: 5px;
+    }
+
+    /* */
 }
 
 @media (max-width: 380px) {
+    body {
+        font-size: 12px;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /* */
+    
     .logo {
         font-size: 18px;
 
@@ -477,5 +520,15 @@ hr {
     .welcome__links > * {
         width: 80%;
         font-size: 15px;
+    }
+
+    /* */    
+    .card img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .card h4 {
+        font-size: 18px;
     }
 }
