@@ -189,7 +189,7 @@ hr {
 }
 
 .card {
-    max-width: 300px;
+    width: 300px;
     padding: 36px 15px 10px 15px;
 
     border: 1px solid #DCEBF7;
@@ -361,7 +361,7 @@ hr {
 
 
 /* ------------------ NAVIGATION IN MEETINGS ------------------ */
-.link-white {
+/*.link-white {
     display: inline-block;
     margin: 20px 0;
     padding: 10px 30px;
@@ -390,27 +390,21 @@ hr {
 .link-white:focus {
     outline: none;
     box-shadow: 0 0 0 2px lightskyblue;
-}
+}*/
 
-.navigate-meetings .container > * {
-    margin-bottom: 0;
-    margin-top: 30px;
-}
-
-.navigate-meetings .cards-wrapper > * {
+.navigate-meetings .card {
     width: 48%;
-
     border: 1px solid #bbe0ff;
 }
 
-.navigate-meetings .cards-wrapper p {
+.navigate-meetings .card p {
     margin: 0 0;
 
     text-align: justify;
     text-indent: 20px;
 }
 
-.navigate-meetings .cards-wrapper img {
+.navigate-meetings .card img {
     margin-bottom: 20px;
 
     width: 200px;
@@ -419,6 +413,17 @@ hr {
 
 
 /* ------------------ ADAPTIVE DESIGN ------------------ */
+@media (max-width: 900px) {
+    .navigate-meetings .cards-wrapper {
+        flex-direction: column;
+    }
+
+    .navigate-meetings .card {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
 @media (max-width: 550px) {
     body {
         font-size: 13px;
@@ -482,6 +487,9 @@ hr {
     }
 
     /* */
+    .navigate-meetings .card {
+        width: 100%;
+    }
 }
 
 @media (max-width: 380px) {
