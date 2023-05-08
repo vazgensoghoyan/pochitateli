@@ -327,7 +327,7 @@ hr {
 }
 
 .footer__desc-container > * {
-    width: 30%;
+    width: 300px;
 }
 
 .footer__desc h4 {
@@ -422,6 +422,15 @@ hr {
         margin: 0 auto;
         width: 90%;
     }
+
+    /* */
+    .footer__desc-container {
+        gap: 40px;
+    }
+
+    .footer__desc h4 {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -489,6 +498,11 @@ hr {
     /* */
     .navigate-meetings .card {
         width: 100%;
+    }
+
+    /* */
+    .footer__copy p {
+        font-size: 12px;
     }
 }
 
