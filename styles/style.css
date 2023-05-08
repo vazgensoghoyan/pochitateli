@@ -276,7 +276,7 @@ hr {
     transform: scale(0.98);
 }
 
-.poems h4 {
+.recomended-poems h4 {
     margin-bottom: 15px;
 
     font-size: 25px;
@@ -285,7 +285,7 @@ hr {
     color: #000;
 }
 
-.poems .poem {
+.recomended-poems .poem p {
     display: table;
     margin: 0 auto;
 
@@ -537,11 +537,11 @@ hr {
     }
 
     /* */
-    .poems h4 {
+    .recomended-poems h4 {
         font-size: 22px;
     }
     
-    .poems .poem {
+    .recomended-poems .poem p {
         font-size: 14px;
     }
 }
@@ -611,13 +611,13 @@ hr {
         font-size: 14px;
     }
 
-    .poems h4 {
+    .porecomended-poemsems h4 {
         margin-bottom: 5px;
     
         font-size: 20px;
     }
     
-    .poems .poem {
+    .recomended-poems .poem p {
         font-size: 12px;
     }
 }
