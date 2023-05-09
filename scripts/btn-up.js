@@ -1,27 +1,26 @@
 const btnUp = {
   el: document.querySelector('.btn-up'),
   show() {
-    // удалим у кнопки класс btn-up_hide
-    this.el.classList.remove('btn-up_hide');
+    // remove class "hide" from the button => show the button
+    this.el.classList.remove('hide');
   },
   hide() {
-    // добавим к кнопке класс btn-up_hide
-    this.el.classList.add('btn-up_hide');
+    // remove class "hide" from the button => hide the button
+    this.el.classList.add('hide');
   },
   addEventListener() {
-    // при прокрутке содержимого страницы
+    // checking the scroll event
     window.addEventListener('scroll', () => {
-      // определяем величину прокрутки
+      // determining the amount of scrolling
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+      // if the page is scrolled by more than 400px, then we make the button visible, otherwise we hide it
       scrollY > 400 ? this.show() : this.hide();
     });
-    // при нажатии на кнопку .btn-up
+    // while clicking on the .btn-up
     document.querySelector('.btn-up').onclick = () => {
-      // переместим в начало страницы
+      // scrolling to the top of the page
       window.scrollTo({
         top: 0,
-        left: 0,
         behavior: 'smooth'
       });
     }
