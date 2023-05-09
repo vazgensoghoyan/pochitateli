@@ -592,6 +592,21 @@ hr {
     .recomended-poems .poem p {
         font-size: 14px;
     }
+
+    /* */
+    .btn-up {
+        right: 15px;
+        bottom: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-up::before {
+        width: 18px;
+        height: 18px;
+        left: 10px;
+        top: 10px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -667,5 +682,21 @@ hr {
     
     .recomended-poems .poem p {
         font-size: 12px;
+    }
+
+    /* */
+    .btn-up {
+        right: 12px;
+        bottom: 12px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-up::before {
+        width: 15px;
+        height: 15px;
+        left: 9px;
+        top: 9px;
+        background-size: 18px 18px;
     }
 }
