@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/anchors.js" defer></script>
+    <script src="scripts/btn-up.js" defer></script>
   </head>
 
   <body>
@@ -17,26 +18,26 @@
 
         <nav class="header__nav">
           <ul>
-            <li><a href="#welcome" class="this-page">Главная</a></li>
+            <li><a href="#main" class="this-page">Главная</a></li>
             <li><a href="#footer__social" class="this-page">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="main">
-      <section class="welcome dark" id="welcome">
+    <main class="main" id="main">
+      <section class="welcome dark">
         <div class="container">
           <h2 class="welcome__heading">Привет от ПоЧитателей!</h2>
 
           <div class="welcome__links">
             <a href="#footer__social" class="link-primary">Записаться</a>
-            <a href="#footer__about" class="link">Узнать больше</a>
+            <a href="#main__about" class="link">Узнать больше</a>
           </div>
         </div>
       </section>
 
-      <section class="about common-section">
+      <section class="about common-section" id="main__about">
         <div class="container">
           <h3 class="title">Чем мы занимаемся на встречах?</h3>
 
@@ -135,5 +136,7 @@
         </div>
       </div>
     </footer>
+
+    <div class="btn-up btn-up_hide"></div>
   </body>
 </html>
